@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produkt — Landing Page</title>
+  <meta name="description" content="Prosty, responsywny landing page — gotowy szablon.">
+  <meta property="og:title" content="Produkt — Landing Page">
+  <meta property="og:description" content="Prosty, responsywny landing page — gotowy szablon.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#">Logo</a>
+      <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">☰</button>
+      <ul id="nav-menu" class="nav-menu" hidden>
+        <li><a href="#features">Funkcje</a></li>
+        <li><a href="#pricing">Cennik</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Twoje rozwiązanie. Szybko.</h1>
+        <p class="lead">Prosty, szybki i responsywny landing page. Zbieraj zapisy i prezentuj ofertę.</p>
+        <p>
+          <a class="btn primary" href="#contact">Rozpocznij</a>
+          <a class="btn" href="#features">Dowiedz się więcej</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Funkcje</h2>
+      <div class="grid">
+        <article class="feature">
+          <h3>Responsywny design</h3>
+          <p>Działa na telefonach, tabletach i desktopach.</p>
+        </article>
+        <article class="feature">
+          <h3>Prosty formularz</h3>
+          <p>Gotowy do integracji z dowolnym backendem lub usługą mailingową.</p>
+        </article>
+        <article class="feature">
+          <h3>Optymalizacja SEO</h3>
+          <p>Podstawowe meta tagi i Open Graph w standardzie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Kontakt / Zapisz się</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Imię</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Wiadomość (opcjonalnie)</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="btn primary">Wyślij</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Copyright — Twoja Firma</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
